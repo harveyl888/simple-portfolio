@@ -11,10 +11,69 @@
   </div>
 </section>
 
-<div class="container-lg">
-  <div class="row">
-    {{ .Content }}
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-md-8">
+        {{ .Content }}
+      </div>
+      <div class="col-md-4 category-col">
+        <div class="category-section">
+          
+          {{ with .Params.Client }}
+          <div class="col-md-12">
+            <div>
+              <div>
+                <i class='fa-regular fa-handshake icon-info'></i>
+                <h4 class='icon-title'>Client</h4>
+              </div>
+              <p>{{. | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+  
+          {{ with .Params.Agency }}
+          <div class="col-md-12">
+            <div>
+              <div>
+                <i class='fa-solid fa-people-roof icon-info'></i>
+                <h4 class='icon-title'>Agency</h4>
+              </div>
+              <p>{{. | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+          
+          {{ with .Params.Role }}
+          <div class="col-md-12">
+            <div>
+              <div>
+                <i class='fa-regular fa-user icon-info'></i>
+                <h4 class='icon-title'>Role</h4>
+              </div>
+              <p>{{. | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+  
+          {{ if .Params.Categories }}
+          <div class="col-md-12">
+            <div>
+              <div>
+                <i class='fa-solid fa-tags icon-info'></i>
+                <h4 class='icon-title'>Categories</h4>
+              </div>
+              <div class="category-outer">
+                {{ range .Params.Categories }}
+                <span class="category-badge">{{. | markdownify}}</span>
+                {{ end }}
+                </div>
+            </div>
+          </div>
+          {{ end }}
+
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
 {{ end }}
