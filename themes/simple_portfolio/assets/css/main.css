@@ -1,0 +1,62 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans.woff) format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+.hover-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%
+}
+
+.hover-wrapper img {
+  transition: .3s ease;
+  transform: scale(1.0)
+}
+
+.hover-wrapper:hover img {
+  transform: scale(1.2)
+}
+
+.hover-wrapper:hover .hover-overlay {
+  opacity: 1;
+  visibility: visible
+}
+
+.hover-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease
+}
+
+.hover-content {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px
+}
+
+.hover-title {
+  font-family: OpenSans;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white
+ }
