@@ -1,3 +1,7 @@
+{{ with .Site.Params.footer_message }}
+<p class="footer-message">{{ . }}</p>
+{{ end }}
+
 {{ if eq .Site.Params.footer_socials true }}
   <div class="footer-social">
     {{ partial "social_links.html" . }}
