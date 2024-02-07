@@ -1,0 +1,57 @@
+
+<section class="social-outer">
+
+  <ul class="social-icons">
+
+    {{ with .Site.Params.social.twitter }}
+    <li>
+      <a href="https://twitter.com/{{ . }}" target="_blank" aria-label="twitter" class="social-icon">
+        {{ partial "svg/twitter.svg" }}
+      </a>
+    </li>
+    {{ end }}
+  
+    {{ with .Site.Params.social.facebook }}
+    <li>
+      <a href="https://facebook.com/{{ . }}" target="_blank" aria-label="facebook" class="social-icon">
+        {{ partial "svg/facebook.svg" }}
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Params.social.instagram }}
+    <li>
+      <a href="https://instagram.com/{{ . }}" target="_blank" aria-label="instagram" class="social-icon">
+        {{ partial "svg/instagram.svg" }}
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Params.social.linkedin }}
+    <li>
+      <a href="https://linkedin.com/{{ . }}" target="_blank" aria-label="linkedin" class="social-icon">
+        {{ partial "svg/linkedin.svg" }}
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Params.social.workingnotworking }}
+    <li>
+      <a href="https://workingnotworking.com/{{ . }}" target="_blank" aria-label="workingnotworking" class="social-icon">
+        {{ partial "svg/workingnotworking.svg" }}
+      </a>
+    </li>
+    {{ end }}
+  
+    {{ with .Site.Params.social.email }}
+    <li>
+      <a href="mailto:{{ . }}" aria-label="email" class="social-icon">
+        {{ partial "svg/email.svg" }}
+      </a>
+    </li>
+    {{ end }}
+  
+  </ul>
+
+</section>
+

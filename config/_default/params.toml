@@ -1,1 +1,11 @@
 logo = ""
+
+## social
+footer_socials = true  ## include social icons in footer
+
+[social]
+  twitter = "username"
+  instagram = "username"
+  linkedin = "username"
+  workingnotworking = "username"
+  email = "name@email.com"
