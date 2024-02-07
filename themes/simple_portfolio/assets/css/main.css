@@ -5,8 +5,16 @@
   font-display: swap;
 }
 
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 200px;
+}
+
 header {
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .navigation {
