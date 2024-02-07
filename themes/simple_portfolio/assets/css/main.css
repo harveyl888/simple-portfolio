@@ -24,6 +24,11 @@ header {
   color: #78909C
 }
 
+.page-title {
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
+
 .hover-wrapper {
   overflow: hidden;
   border-radius: 20px;
