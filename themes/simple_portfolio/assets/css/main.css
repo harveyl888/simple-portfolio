@@ -5,6 +5,25 @@
   font-display: swap;
 }
 
+header {
+  margin-top: 1rem;
+}
+
+.navigation {
+  background-color: #ECEFF1;
+  padding: 10px 20px;
+}
+
+.navbar .nav-item .nav-link {
+  font-family: OpenSans;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.navbar .nav-item.active .nav-link {
+  color: #78909C
+}
+
 .hover-wrapper {
   overflow: hidden;
   border-radius: 20px;
