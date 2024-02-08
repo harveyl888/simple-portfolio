@@ -1,4 +1,6 @@
 logo = ""
+firstname = "Bob"
+attributes = ["Writer", "Father", "Visionary", "Funny Person"]
 
 ## footer
 footer_message = "Reach out if you want to work with me"  ## include a message in the footer

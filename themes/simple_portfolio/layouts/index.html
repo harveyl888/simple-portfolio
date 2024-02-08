@@ -1,7 +1,16 @@
 {{ define "main" }}
 
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 <!--page header-->
 <section class="page-title">
+  <div class="container mt100 mb100">
+
+    <div class="type-text">
+      <span>My name is {{ site.Params.Firstname }} and I'm a </span>
+      <span id="typetext"></span>
+    </div>
+  </div>
 </section>
 
 <!---portfolio-->
@@ -30,5 +39,12 @@
     </div>
   </div>
 </section>
+
+{{- $js := resources.Get "js/typewriter.js" -}}
+{{- $opts := dict 
+  "params" (dict "textlist" site.Params.Attributes) 
+-}}
+{{- $js = $js | js.Build $opts -}}
+<script src="{{ $js.Permalink }}"></script>
 
 {{ end }}
