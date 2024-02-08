@@ -18,12 +18,21 @@ header {
 }
 
 footer {
-    background-color: #ECEFF1;
-    height: 120px;
-    margin-top: 1rem;
-    padding: 1rem;
-  }
-  
+  background-color: #ECEFF1;
+  height: 120px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+iframe {
+  padding: 20px 0;
+}
+
+.img-class {
+  display: block;
+  margin: 10px auto;
+}
+
 .navigation {
   background-color: #ECEFF1;
   padding: 10px 20px;
