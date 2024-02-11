@@ -11,27 +11,7 @@
   </div>
 </section>
 
-<!---portfolio-->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      {{ range (where .Site.RegularPages "Section" "portfolio") }}
-        <div class="col-md-4 mb-4 item">
-          <div class="position-relative hover-wrapper">
-            <a href="{{ .Permalink | safeURL }}">
-              <img src="{{ .Params.image | absURL }}" alt="image" class="img-fluid rounded d-block w-100">
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <p class="hover-title">{{ .Params.Title }}</p>
-                </div>
-              </div>
-              </a>
-          </div>
-        </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-
+<!--portfolio-->
+{{ partial "portfolio_section.html" . }}
 
 {{ end }}
