@@ -13,20 +13,20 @@
 
   <div class="container-lg">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-9">
         {{ .Content }}
       </div>
-      <div class="col-md-4 category-col">
+      <div class="col-md-3 category-col">
         <div class="category-section">
-          
+
           {{ with .Params.Client }}
           <div class="col-md-12">
             <div>
               <div>
-                <i class='fa-regular fa-handshake icon-info'></i>
-                <h4 class='icon-title'>Client</h4>
+                <i class='fa-regular fa-handshake category-icon-info'></i>
+                <h4 class='category-icon-title'>Client</h4>
               </div>
-              <p>{{. | markdownify}}</p>
+              <div class="category-text">{{. | markdownify}}</div>
             </div>
           </div>
           {{ end }}
@@ -35,10 +35,10 @@
           <div class="col-md-12">
             <div>
               <div>
-                <i class='fa-solid fa-people-roof icon-info'></i>
-                <h4 class='icon-title'>Agency</h4>
+                <i class='fa-solid fa-people-roof category-icon-info'></i>
+                <h4 class='category-icon-title'>Agency</h4>
               </div>
-              <p>{{. | markdownify}}</p>
+              <div class="category-text">{{. | markdownify}}</div>
             </div>
           </div>
           {{ end }}
@@ -47,10 +47,10 @@
           <div class="col-md-12">
             <div>
               <div>
-                <i class='fa-regular fa-user icon-info'></i>
-                <h4 class='icon-title'>Role</h4>
+                <i class='fa-regular fa-user category-icon-info'></i>
+                <h4 class='category-icon-title'>Role</h4>
               </div>
-              <p>{{. | markdownify}}</p>
+              <div class="category-text">{{. | markdownify}}</div>
             </div>
           </div>
           {{ end }}
@@ -59,8 +59,8 @@
           <div class="col-md-12">
             <div>
               <div>
-                <i class='fa-solid fa-tags icon-info'></i>
-                <h4 class='icon-title'>Categories</h4>
+                <i class='fa-solid fa-tags category-icon-info'></i>
+                <h4 class='category-icon-title'>Categories</h4>
               </div>
               <div class="category-outer">
                 {{ range .Params.Categories }}

@@ -131,23 +131,32 @@ iframe {
 .category-section {
   background-color: #ECEFF1;
   border-radius: 20px;
-  margin: 0 20px;
-  padding: 20px;
+  margin: 0 10px;
+  padding: 10px;
   position: sticky;
   top: 100px;
+}
+
+.category-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
 }
 
 .category-outer {
   margin-top: 5px;
   display: flex;
+  flex-wrap: wrap;
   column-gap: 8px;
 }
 
 .category-badge {
   border-radius: 10px;
   padding: 2px 5px;
-  background-color: #CE93DB;
-  color: #fff
+  background-color: #aec0c9;
+  color: #fff;
+  font-size: .8rem;
+  margin-bottom: 2px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -162,18 +171,19 @@ iframe {
   }
 }
 
-.icon-info {
-  scale: 1.5;
-  margin-left: 0.2rem;
-  bottom: 0.2rem;
+.category-icon-info {
+  scale: 1.1;
+  margin-left: 0.1rem;
+  bottom: 0.1rem;
   position: relative;
   color: #78909C;
 }
 
-.icon-title {
+.category-icon-title {
   display: inline;
   margin-left: 10px;
   color: #78909C;
+  font-size: 1.1rem;
 }
 
 .footer {
