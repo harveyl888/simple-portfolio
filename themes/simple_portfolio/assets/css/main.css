@@ -215,3 +215,7 @@ iframe {
 .carousel {
   margin-bottom: 20px;
 }
+
+.carousel-dark {
+  filter: invert(1);
+}
