@@ -29,10 +29,10 @@ The following are the site parameters that you can set in the `hugo.toml` file
 ```toml
 # hugo.toml
 baseURL = "/"
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = My Hugo Site Title
-theme = simple_portfolio
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "My Hugo Site Title"
+theme = "simple_portfolio"
 ```
 
 ### Menus - menus.toml
