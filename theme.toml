@@ -1,10 +1,10 @@
 name = 'Simple Portfolio'
 license = 'MIT'
-licenselink = 'https://github.com/harveyl888/simple-portfolio/LICENSE'
+licenselink = 'https://github.com/harveyl888/simple_portfolio/LICENSE'
 description = 'A simple theme for an advertising portfolio'
 
 # The home page of the theme, where the source can be found
-# homepage = 'https://github.com/harveyl888/simple-portfolio'
+# homepage = 'https://github.com/harveyl888/simple_portfolio'
 
 # If you have a running demo of the theme
 # demosite = 'https://owner.github.io/repo'
