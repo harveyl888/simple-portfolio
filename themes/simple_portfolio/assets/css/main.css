@@ -13,9 +13,9 @@ body {
   margin-bottom: 200px;
 }
 
-header {
+/*header {
   margin-bottom: 1rem;
-}
+}*/
 
 footer {
   background-color: #ECEFF1;
@@ -48,9 +48,23 @@ iframe {
   color: #78909C
 }
 
-.page-title {
+.landing-title {
   padding-top: 140px;
   padding-bottom: 60px;
+}
+
+.page-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.page-top {
+  margin-top: 200px;
 }
 
 .section-title {
@@ -134,7 +148,7 @@ iframe {
   margin: 0 10px;
   padding: 10px;
   position: sticky;
-  top: 100px;
+  top: 200px;
 }
 
 .category-text {
@@ -184,6 +198,14 @@ iframe {
   margin-left: 10px;
   color: #78909C;
   font-size: 1.1rem;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.mb100 {
+  margin-bottom: 100px;
 }
 
 .footer {
