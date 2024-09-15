@@ -1,0 +1,16 @@
+logo = ""
+firstname = "Bob"
+attributes = ["Writer", "Father", "Visionary", "Funny Person"]
+
+## footer
+footer_message = "Reach out if you want to work with me"  ## include a message in the footer
+
+## social
+footer_socials = true  ## include social icons in footer
+
+[social]
+  twitter = "username"
+  instagram = "username"
+  linkedin = "username"
+  workingnotworking = "username"
+  email = "name@email.com"

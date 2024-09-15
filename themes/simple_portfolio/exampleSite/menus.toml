@@ -1,0 +1,14 @@
+[[main]]
+url = "/"
+name = "Home"
+weight = 1
+
+[[main]]
+url = "about"
+name = "About"
+weight = 2
+
+[[main]]
+url = "portfolio"
+name = "Portfolio"
+weight = 3
