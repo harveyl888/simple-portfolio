@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<!--page header-->
+<section class="page-title">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>About Me</h1>
+      </div> 
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-md-8 page-top">
+        {{ .Content }}
+      </div>
+      <div class="col-md-4 page-top">
+        <img src="{{.Params.image | absURL }}" alt="me"
+            class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

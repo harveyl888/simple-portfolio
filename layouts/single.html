@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<!--page header-->
+<section class="page-title">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>{{ .Title }}</h1>
+      </div> 
+    </div>
+  </div>
+</section>
+<div class="container-lg">
+  <div class="row">
+    <div class="col-md-12">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+{{ end }}

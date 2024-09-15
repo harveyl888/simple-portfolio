@@ -1,0 +1,76 @@
+{{ $img_src := split (.Get "img_src") "," }}
+{{ $use_controls := "true" }}
+{{ $use_indicators := "true" }}
+{{ $use_dark := "false" }}
+
+{{ with .Params.controls }}
+  {{ $use_controls = . }} 
+{{ end }}
+
+{{ with .Get "indicators" }}
+  {{ $use_indicators = . }} 
+{{ end }}
+
+{{ with .Params.dark }}
+  {{ $use_dark = . }} 
+{{ end }}
+
+{{ $additional_class := "" }}
+{{ if eq $use_dark "true" }}
+  {{ $additional_class = "carousel-dark" }}
+{{ end }}
+
+{{ if gt ($img_src | len) 0 }}
+
+  {{ $first_image := index ($img_src) 0 }}
+
+  {{ if gt ($img_src | len) 1 }}
+
+    {{ $id_num := delimit (shuffle (seq 1 9)) "" }}
+    {{ $id := (print "car_" $id_num) }}
+    <div id="{{ $id }}" class="carousel slide" data-bs-ride="carousel">
+      
+      {{ if eq $use_indicators "true" }}
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#{{ $id }}" data-bs-slide-to="0" class="active {{ $additional_class }}" aria-current="true" aria-label="Slide 1"></button>
+        {{ $.Scratch.Set "index" 0 }}
+        {{ range after 1 $img_src }}
+          {{ $.Scratch.Set "index" (add ($.Scratch.Get "index") 1) }}
+          <button type="button" class="{{ $additional_class }}" data-bs-target="#{{ $id }}" data-bs-slide-to="{{ ($.Scratch.Get "index") }}" aria-label="Slide {{ ($.Scratch.Get "index") }}"></button>
+        {{ end }}
+      </div>
+      {{ end }}
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ $first_image | absURL }}" class="d-block w-100" alt="">
+        </div>
+        {{ range after 1 $img_src }}
+          <div class="carousel-item">
+            <img src="{{ . | absURL }}" class="d-block w-100" alt="">
+          </div>
+        {{ end }}
+      </div>
+
+      {{ if eq $use_controls "true" }}
+        <button class="carousel-control-prev" type="button" data-bs-target="#{{ $id }}" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon {{ $additional_class }}" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#{{ $id }}" data-bs-slide="next">
+          <span class="carousel-control-next-icon {{ $additional_class}}" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      {{ end }}
+
+    </div>
+
+  {{ else }}
+
+    <div>
+      <img src="{{ $first_image | absURL }}" class="d-block w-100" alt="">
+    </div>
+
+  {{ end }}
+
+{{ end }}
