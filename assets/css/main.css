@@ -200,6 +200,18 @@ iframe {
   font-size: 1.1rem;
 }
 
+.portfolio-section-header {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-section-header h2 {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
 .mt100 {
   margin-top: 100px;
 }

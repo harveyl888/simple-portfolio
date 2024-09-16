@@ -2,9 +2,9 @@
   <h2>{{ .Get "title" }}</h2>
   {{ if isset .Params "categories" }}
   {{ $categories := split (.Get "categories") "," }}
-  <div class="cat-outer">
+  <div class="category-outer">
     {{ range $categories}}
-      <div class="cat-badge">{{. | markdownify}}</div>
+      <div class="category-badge">{{. | markdownify}}</div>
     {{ end }}
   </div>
   {{ end }}
