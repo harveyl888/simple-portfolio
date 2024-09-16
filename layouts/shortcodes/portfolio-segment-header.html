@@ -1,0 +1,11 @@
+<div class="portfolio-section-header">
+  <h2>{{ .Get "title" }}</h2>
+  {{ if isset .Params "categories" }}
+  {{ $categories := split (.Get "categories") "," }}
+  <div class="cat-outer">
+    {{ range $categories}}
+      <div class="cat-badge">{{. | markdownify}}</div>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
