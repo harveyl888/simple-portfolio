@@ -5,7 +5,11 @@
   <div class="container-lg">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1>Portfolio</h1>
+        {{ with .Site.Params.headings.portfolio }}
+          <h1>{{ . }}</h1>
+        {{ else }}
+          <h1>Portfolio</h1>
+        {{ end }}
       </div> 
     </div>
   </div>
