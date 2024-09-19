@@ -2,7 +2,7 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      {{ range (where .Site.RegularPages "Section" "portfolio") }}
+      {{ range (where .Site.RegularPages "Section" "portfolio").ByWeight }}
         <div class="col-md-4 mb-4 item">
           <div class="position-relative hover-wrapper">
             <a href="{{ .Permalink | safeURL }}">
