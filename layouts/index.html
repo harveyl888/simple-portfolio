@@ -16,7 +16,11 @@
 <!--portfolio section header-->
 <div class="row">
   <div class="col-12 text-center">
-    <p class="section-title">Portfolio</p>
+    {{ with .Site.Params.headings.portfolio }}
+      <p class="section-title">{{ . }}</p>
+    {{ else }}
+      <p class="section-title">Portfolio</p>
+    {{ end }}
   </div>
 </div>
 
