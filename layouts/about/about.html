@@ -12,13 +12,15 @@
 </section>
 <section>
   <div class="container-lg">
-    <div class="row">
-      <div class="col-md-8 page-top">
+    <div class="row page-top">
+      <div class="col-md-8">
         {{ .Content }}
       </div>
-      <div class="col-md-4 page-top">
-        <img src="{{.Params.image | absURL }}" alt="me"
-            class="img-fluid">
+      <div class="col-md-4">
+        {{ with .Params.image }}
+        <img src="{{. | absURL }}" alt="me"
+            class="img-fluid img-class">
+        {{ end }}
         </div>
       </div>
     </div>
