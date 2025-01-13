@@ -1,6 +1,12 @@
 logo = ""
-firstname = "Bob"
-attributes = ["Writer", "Father", "Visionary", "Funny Person"]
+
+[typewriter]
+  firstname = "Bob"
+  attributes = ["Writer", "Father", "Visionary", "Funny Person"]
+  delay = 100
+  pause = 500
+  colorFixed= "#000000"
+  colorType = "#009900"
 
 ## footer
 footer_message = "Reach out if you want to work with me"  ## include a message in the footer
