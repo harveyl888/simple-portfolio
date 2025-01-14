@@ -4,8 +4,13 @@
       <a class="navbar-brand" href="{{ site.BaseURL }}">
         {{ if site.Params.logo }}
         <img src="{{ site.Params.logo | absURL }}" alt="{{site.Title}}" height="38">
+        {{ else if and site.Params.Title site.Params.Subtitle }}
+        <div class="titlesub">
+          <div class="titlesub-title">{{ site.Params.Title }}</div>
+          <div class="titlesub-subtitle">{{ site.Params.Subtitle }}</div>
+        </div>
         {{ else }}
-        <h3>{{site.Title}}</h3>
+        <h3>{{ site.Title }}</h3>
         {{ end }}
       </a>
   

@@ -1,4 +1,6 @@
 logo = ""
+title = "Bob"
+subtitle = "Creative Director"
 
 [typewriter]
   firstname = "Bob"
