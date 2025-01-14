@@ -263,3 +263,16 @@ iframe {
 .carousel-dark {
   filter: invert(1);
 }
+
+.titlesub {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.titlesub .titlesub-title {
+  font-size: .9em;
+}
+
+.titlesub .titlesub-subtitle {
+  font-size: .8em;
+}
