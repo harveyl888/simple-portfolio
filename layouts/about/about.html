@@ -21,6 +21,9 @@
         <img src="{{. | absURL }}" alt="me"
             class="img-fluid img-class">
         {{ end }}
+        {{ with .Site.Params.resume_file }}
+          <a class="resume-link" href="{{ . |absURL }}" target="_blank">Download my Resume</a>
+        {{ end }}
         </div>
       </div>
     </div>

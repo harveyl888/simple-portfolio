@@ -2,6 +2,15 @@ logo = ""
 title = "Bob"
 subtitle = "Creative Director"
 
+## resume
+resume_file = "/resume/lorem_ipsum.pdf"
+
+## footer
+footer_message = "Reach out if you want to work with me"  ## include a message in the footer
+
+## social
+footer_socials = true  ## include social icons in footer
+
 [typewriter]
   firstname = "Bob"
   attributes = ["Writer", "Father", "Visionary", "Funny Person"]
@@ -10,15 +19,10 @@ subtitle = "Creative Director"
   colorFixed= "#000000"
   colorType = "#009900"
 
-## footer
-footer_message = "Reach out if you want to work with me"  ## include a message in the footer
-
-## social
-footer_socials = true  ## include social icons in footer
-
 [social]
   twitter = "username"
   instagram = "username"
   linkedin = "username"
   workingnotworking = "username"
   email = "name@email.com"
+
