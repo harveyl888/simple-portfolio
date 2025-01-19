@@ -2,6 +2,9 @@ logo = ""
 title = "Bob"
 subtitle = "Creative Director"
 
+## resume
+resume_file = "/resume/lorem_ipsum.pdf"
+
 ## footer
 footer_message = "Reach out if you want to work with me"  ## include a message in the footer
 

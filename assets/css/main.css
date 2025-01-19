@@ -276,3 +276,10 @@ iframe {
 .titlesub .titlesub-subtitle {
   font-size: .8em;
 }
+
+.resume-link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
