@@ -33,6 +33,10 @@ iframe {
   margin: 10px auto;
 }
 
+.img-left {
+  margin: 10px;
+}
+
 .navigation {
   background-color: #ECEFF1;
   padding: 10px 20px;
